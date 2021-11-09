@@ -32,13 +32,16 @@ const userSlice = createSlice({
   initialState,
   reducers: {
     resetUserState: state => {
-      Object.keys(initialState).forEach(key => (state[key] = initialState[key]));
+      state = initialState;
     },
     clearValiadtion: state => {
       state.isValidated = false;
     },
   },
   extraReducers: {
+    [loginUser.pending]: state => {
+      state.isFetching = true;
+    },
     [loginUser.fulfilled]: (state, { payload }) => {
       state.isFetching = false;
       state.isSuccess = true;
@@ -47,9 +50,6 @@ const userSlice = createSlice({
       state.isFetching = false;
       state.isError = true;
       state.errorMessage = payload.message;
-    },
-    [loginUser.pending]: state => {
-      state.isFetching = true;
     },
     [fetchUserBytoken.pending]: state => {
       state.isFetching = true;
@@ -60,9 +60,10 @@ const userSlice = createSlice({
       state.isValidated = true;
       state.userData = payload.userData;
     },
-    [fetchUserBytoken.rejected]: state => {
+    [fetchUserBytoken.rejected]: (state, { payload }) => {
       state.isFetching = false;
       state.isError = true;
+      state.errorMessage = payload.message;
     },
   },
 });

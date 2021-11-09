@@ -14,10 +14,10 @@ module.exports = {
     alias: {
       '@helpers': `${__dirname}/src/helpers/`,
       '@custom-hooks': `${__dirname}/src/custom-hooks/`,
-      '@components': `${__dirname}/src/components`,
-      '@features': `${__dirname}/src/features`,
-      '@services': `${__dirname}/src/services`,
-      '@assets': `${__dirname}/src/assets`,
+      '@components': `${__dirname}/src/components/`,
+      '@features': `${__dirname}/src/features/`,
+      '@services': `${__dirname}/src/services/`,
+      '@assets': `${__dirname}/src/assets/`,
     },
   },
 };

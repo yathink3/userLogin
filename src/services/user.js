@@ -11,6 +11,6 @@ export const loginUserApi = async ({ email, password }) => {
 };
 
 export const fetchUserBytokenApi = async ({ token }) => {
-  const config = { method: 'GET', headers };
+  const config = { method: 'GET', headers: { ...headers, Authorization: token } };
   return await apiHandler(fetch(`${BASE_URL}/users`, config), 'fetchUserBytokenApi');
 };

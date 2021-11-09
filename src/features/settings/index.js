@@ -10,9 +10,9 @@ const uiSettingsSlice = createSlice({
     resetUiSettings: state => {
       state = initialState;
     },
-    updateUiSettings: (state, action) => {
-      if (action.payload && action.payload.constructor === Object) {
-        Object.keys(action.payload).forEach(key => state[key] !== undefined && (state[key] = action.payload[key]));
+    updateUiSettings: (state, { payload }) => {
+      if (payload && payload.constructor === Object) {
+        Object.keys(payload).forEach(key => state[key] !== undefined && (state[key] = payload[key]));
       }
     },
   },
