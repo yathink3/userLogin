@@ -1,4 +1,4 @@
-import encryptStorage from 'helpers/encryptStorage';
+import encryptStorage from '@helpers/encryptStorage';
 import { useState } from 'react';
 
 const useEncryptedStorage = (key, initialValue) => {

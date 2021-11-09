@@ -1,6 +1,6 @@
-import { ReactComponent as DarkIcon } from 'assets/icons/dark.svg';
-import { ReactComponent as LightIcon } from 'assets/icons/light.svg';
-import useDarkMode from 'custom-hooks/useDarkMode';
+import { ReactComponent as DarkIcon } from '@assets/icons/dark.svg';
+import { ReactComponent as LightIcon } from '@assets/icons/light.svg';
+import useDarkMode from '@custom-hooks/useDarkMode';
 import React from 'react';
 
 const DarkModeToggler = () => {

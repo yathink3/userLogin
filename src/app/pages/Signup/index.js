@@ -1,9 +1,9 @@
-import { useUserDispatch } from 'features/user/hooks';
+import { useUserDispatch } from '@features/user/hooks';
+import { signupUserApi } from '@services/user';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import { Link, useHistory } from 'react-router-dom';
-import { signupUserApi } from 'services/user';
 
 const Signup = () => {
   const history = useHistory();

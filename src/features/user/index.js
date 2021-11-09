@@ -1,6 +1,6 @@
+import encryptStorage from '@helpers/encryptStorage';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import encryptStorage from 'helpers/encryptStorage';
-import { fetchUserBytokenApi, loginUserApi } from 'services/user';
+import { fetchUserBytokenApi, loginUserApi } from '@services/user';
 
 export const loginUser = createAsyncThunk('users/login', async ({ email, password }, thunkAPI) => {
   try {

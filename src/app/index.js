@@ -1,5 +1,5 @@
-import useDarkMode from 'custom-hooks/useDarkMode';
-import { PrivateRoute } from 'helpers/PrivateRoute';
+import useDarkMode from '@custom-hooks/useDarkMode';
+import { PrivateRoute } from '@helpers/PrivateRoute';
 import React, { lazy, Suspense } from 'react';
 import Loader from 'react-loader-spinner';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';

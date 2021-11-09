@@ -1,9 +1,9 @@
-import { ReactComponent as MenuIcon } from 'assets/icons/menu.svg';
-import DarkModeToggler from 'components/DarkModeToggler';
-import useOnClickOutside from 'custom-hooks/useOnClickOutside';
-import { useUiSettingsDispatch, useUiSettingsStore } from 'features/settings/hooks';
-import { useUserDispatch, useUserStore } from 'features/user/hooks';
-import encryptStorage from 'helpers/encryptStorage';
+import { ReactComponent as MenuIcon } from '@assets/icons/menu.svg';
+import DarkModeToggler from '@components/DarkModeToggler';
+import useOnClickOutside from '@custom-hooks/useOnClickOutside';
+import { useUiSettingsDispatch, useUiSettingsStore } from '@features/settings/hooks';
+import { useUserDispatch, useUserStore } from '@features/user/hooks';
+import encryptStorage from '@helpers/encryptStorage';
 import React, { lazy, Suspense, useEffect, useRef } from 'react';
 import toast from 'react-hot-toast';
 import Loader from 'react-loader-spinner';

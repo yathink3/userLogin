@@ -1,4 +1,4 @@
-import { useUserDispatch, useUserStore } from 'features/user/hooks';
+import { useUserDispatch, useUserStore } from '@features/user/hooks';
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
