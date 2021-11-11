@@ -8,7 +8,7 @@ const uiSettingsSlice = createSlice({
   initialState,
   reducers: {
     resetUiSettings: state => {
-      state = initialState;
+      Object.keys(initialState).forEach(key => (state[key] = initialState[key]));
     },
     updateUiSettings: (state, { payload }) => {
       if (payload && payload.constructor === Object) {

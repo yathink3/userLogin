@@ -32,7 +32,7 @@ const userSlice = createSlice({
   initialState,
   reducers: {
     resetUserState: state => {
-      state = initialState;
+      Object.keys(initialState).forEach(key => (state[key] = initialState[key]));
     },
     clearValiadtion: state => {
       state.isValidated = false;

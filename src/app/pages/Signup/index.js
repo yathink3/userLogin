@@ -37,7 +37,7 @@ const Signup = () => {
                 Name
               </label>
               <div className='mt-1'>
-                <input id='name' name='name' type='text' ref={register({ required: true })} autocomplete='name' required className='appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm' />
+                <input id='name' name='name' type='text' ref={register({ required: true })} autocomplete='name' required className='appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:text-gray-900 sm:text-sm' />
               </div>
             </div>
             <div>
@@ -45,7 +45,7 @@ const Signup = () => {
                 Email address
               </label>
               <div className='mt-1'>
-                <input id='email' name='email' type='email' autocomplete='email' required ref={register({ pattern: /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/i })} className='appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm' />
+                <input id='email' name='email' type='email' autocomplete='email' required ref={register({ pattern: /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/i })} className='appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:text-gray-900 sm:text-sm' />
               </div>
             </div>
             <div>
@@ -53,7 +53,7 @@ const Signup = () => {
                 Password
               </label>
               <div className='mt-1'>
-                <input id='password' name='password' type='password' ref={register({ required: true })} autocomplete='current-password' required className='appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm' />
+                <input id='password' name='password' type='password' ref={register({ required: true })} autocomplete='current-password' required className='appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:text-gray-900 sm:text-sm' />
               </div>
             </div>
             <div>

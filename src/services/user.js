@@ -1,4 +1,6 @@
-import { apiHandler, BASE_URL, headers } from './util';
+import { apiHandler, headers } from './util';
+
+export const BASE_URL = process.env.BASE_URL;
 
 export const signupUserApi = async ({ name, email, password }) => {
   const config = { method: 'POST', headers, body: JSON.stringify({ name, email, password }) };

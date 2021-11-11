@@ -42,7 +42,7 @@ const Login = () => {
                 Email address
               </label>
               <div className='mt-1'>
-                <input id='email' name='email' type='email' autoComplete='email' ref={register({ pattern: /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/i })} required className='appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm' />
+                <input id='email' name='email' type='email' autoComplete='email' ref={register({ pattern: /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/i })} required className='appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:text-gray-900 sm:text-sm' />
               </div>
             </div>
             <div>
@@ -50,7 +50,7 @@ const Login = () => {
                 Password
               </label>
               <div className='mt-1'>
-                <input id='password' name='password' type='password' ref={register({ required: true })} autoComplete='current-password' required className='appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm' />
+                <input id='password' name='password' type='password' ref={register({ required: true })} autoComplete='current-password' required className='appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:text-gray-900 sm:text-sm' />
               </div>
             </div>
             <div>
