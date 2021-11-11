@@ -1,3 +1,4 @@
+import hocify from '@helpers/hocify';
 import { createSlice } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -35,3 +36,9 @@ export const useSelectUiSettings = () => {
   const data = useSelector(state => state.uiSettings);
   return data;
 };
+
+export const withSettings = hocify(() => {
+  const actions = useDispatchUiSettings();
+  const settings = useSelectUiSettings();
+  return { ...actions, settings };
+});
