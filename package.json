@@ -7,7 +7,7 @@
     "test": "craco test",
     "build": "GENERATE_SOURCEMAP=false craco build",
     "serve": "serve -s build",
-    "server": "node-dev ./node_modules/mock-user-auth/bin/www.js 5000",
+    "server": "node-dev ./node_modules/mock-user-auth/bin/www.js 6000",
     "eject": "react-scripts eject"
   },
   "dependencies": {
